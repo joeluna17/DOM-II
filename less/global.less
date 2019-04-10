@@ -49,3 +49,24 @@ img {
     margin: 0 5%;
   }
 }
+
+@keyframes shakey{
+  0%   {width:75%;}
+  25%  {width:50%;}
+  50%  {width:25%;}
+  100% {width:100%;}
+    }
+
+  @-webkit-keyframes shakey{
+  0%   {width:75%;}
+  25%  {width:50%;}
+  50%  {width:25%;}
+  100% {width:100%;}
+        }
+
+   #shaky-img {
+   animation-name: shakey;
+   animation-duration: 4s;
+   -webkit-animation-name: shakey;
+   -webkit-animation-duration: 4s;
+    }
