@@ -176,30 +176,54 @@ img {
 }
 @keyframes shakey {
   0% {
-    width: 75%;
+    -webkit-transform: rotateY(45deg);
+    /* Safari */
+    transform: rotateY(45deg);
+    box-shadow: 5px 8px 10px black;
   }
   25% {
-    width: 50%;
+    -webkit-transform: rotateY(-45deg);
+    /* Safari */
+    transform: rotateY(-45deg);
+    box-shadow: 5px 8px 10px black;
   }
   50% {
-    width: 25%;
+    -webkit-transform: rotateY(45deg);
+    /* Safari */
+    transform: rotateY(45deg);
+    box-shadow: 5px 8px 10px black;
   }
   100% {
-    width: 100%;
+    -webkit-transform: rotateY(-45deg);
+    /* Safari */
+    transform: rotateY(-45deg);
+    box-shadow: 5px 8px 10px black;
   }
 }
 @-webkit-keyframes shakey {
   0% {
-    width: 75%;
+    -webkit-transform: rotateY(45deg);
+    /* Safari */
+    transform: rotateY(45deg);
+    box-shadow: 5px 8px 10px black;
   }
   25% {
-    width: 50%;
+    -webkit-transform: rotateY(-45deg);
+    /* Safari */
+    transform: rotateY(-45deg);
+    box-shadow: 5px 8px 10px black;
   }
   50% {
-    width: 25%;
+    -webkit-transform: rotateY(45deg);
+    /* Safari */
+    transform: rotateY(45deg);
+    box-shadow: 5px 8px 10px black;
   }
   100% {
-    width: 100%;
+    -webkit-transform: rotateY(-45deg);
+    /* Safari */
+    transform: rotateY(-45deg);
+    box-shadow: 5px 8px 10px black;
   }
 }
 #shaky-img {
@@ -207,6 +231,27 @@ img {
   animation-duration: 4s;
   -webkit-animation-name: shakey;
   -webkit-animation-duration: 4s;
+}
+.black-border {
+  border: 10px solid steelblue;
+  border-radius: 10px;
+}
+.status {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid black;
+  z-index: 9999;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nestedEle {
+  color: Blue;
 }
 .main-navigation {
   width: 100%;
@@ -383,5 +428,4 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
-  
 }
