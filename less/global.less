@@ -8,6 +8,7 @@ html {
 
 html, body {
   font-family: 'Roboto', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -49,3 +50,46 @@ img {
     margin: 0 5%;
   }
 }
+
+@keyframes shakey{
+  0%   { .image-animate(45deg);}
+  25%  { .image-animate(-45deg);}
+  50%  { .image-animate(45deg);}
+  100% { .image-animate(-45deg);}
+    }
+
+  @-webkit-keyframes shakey{
+    0%   { .image-animate(45deg);}
+    25%  { .image-animate(-45deg);}
+    50%  { .image-animate(45deg);}
+    100% { .image-animate(-45deg);}
+        }
+
+   #shaky-img {
+   animation-name: shakey;
+   animation-duration: 4s;
+   -webkit-animation-name: shakey;
+   -webkit-animation-duration: 4s;
+    }
+
+    .black-border {
+      border: 10px solid steelblue;
+      border-radius: 10px;
+    }
+
+    .status {
+        width:50px;
+        height:50px;
+        border-radius: 100%;
+        position:absolute;
+        top:20px;
+        left:20px;
+        border:1px solid black;
+        z-index: 9999;
+        font-size: 2.0rem;
+        .center();
+      }
+
+      .nestedEle {
+        color: Blue;
+      }
